@@ -7,28 +7,32 @@
   body, html {
     height: 100%;
     font-family: Arial, sans-serif;
-  }
-  
-  .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+  }
+  
+  .container {
+    width: 80%; /* Adjust the width percentage as desired */
+    max-width: 600px; /* Set a max width for larger screens */
+    margin: auto;
   }
   
   #initiative-list {
+    width: 100%; /* Takes full width of the container */
     border-collapse: collapse;
-    width: 300px;
-    text-align: left;
+    margin-top: 20px;
   }
   
   #initiative-list th, #initiative-list td {
-    border: 1px solid #ccc;
-    padding: 10px;
+    border: 1px solid black; /* Black borders */
+    padding: 12px;
+    text-align: center;
   }
   
   #initiative-list th {
     background-color: #f2f2f2;
+    font-weight: bold;
   }
   
   #initiative-list td[contenteditable="true"] {
